@@ -62,7 +62,7 @@ export default function GestionProLanding() {
 
           <div className="flex items-center space-x-2">
             <Link
-              href="https://wa.me/3412714029?text=¡Hola!%20Me%20interesa%20GestiónPro"
+              href="https://wa.me/3416171435?text=¡Hola!%20Me%20interesa%20GestiónPro"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center bg-gp-primary hover:bg-gp-primary-700 text-white px-4 py-2 text-sm font-medium rounded-md transition-colors"
@@ -98,7 +98,7 @@ export default function GestionProLanding() {
                 <div className="space-y-4">
                   <div className="flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
                     <Link
-                      href="https://wa.me/3412714029?text=¡Hola!%20Me%20interesa%20comenzar%20la%20prueba%20gratis%20de%20GestiónPro"
+                      href="https://wa.me/3416171435?text=¡Hola!%20Me%20interesa%20comenzar%20la%20prueba%20gratis%20de%20GestiónPro"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center bg-gp-primary hover:bg-gp-primary-700 text-white h-16 w-full sm:w-auto min-w-[240px] px-8 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
@@ -240,7 +240,7 @@ export default function GestionProLanding() {
 
             <div className="flex justify-center">
               <Link
-                href="https://wa.me/3412714029?text=¡Hola!%20Me%20interesa%20comenzar%20la%20prueba%20gratis%20de%20GestiónPro"
+                href="https://wa.me/3416171435?text=¡Hola!%20Me%20interesa%20comenzar%20la%20prueba%20gratis%20de%20GestiónPro"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center bg-gp-primary hover:bg-gp-primary-700 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
@@ -288,7 +288,7 @@ export default function GestionProLanding() {
 
                 <div className="pt-4">
                   <Link
-                    href="https://wa.me/3412714029?text=¡Hola!%20Me%20interesa%20comenzar%20la%20prueba%20gratis%20de%20GestiónPro"
+                    href="https://wa.me/3416171435?text=¡Hola!%20Me%20interesa%20comenzar%20la%20prueba%20gratis%20de%20GestiónPro"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center bg-white text-gp-primary hover:bg-gp-neutral-100 h-16 px-10 text-lg font-bold rounded-xl shadow-[0_0_30px_rgba(255,255,255,0.2)] hover:shadow-[0_0_40px_rgba(255,255,255,0.4)] transition-all duration-300 transform hover:scale-105"
@@ -365,7 +365,7 @@ export default function GestionProLanding() {
                   </ul>
 
                   <Link
-                    href="https://wa.me/3412714029?text=¡Hola!%20Me%20interesa%20comenzar%20la%20prueba%20gratis%20de%20GestiónPro"
+                    href="https://wa.me/3416171435?text=¡Hola!%20Me%20interesa%20comenzar%20la%20prueba%20gratis%20de%20GestiónPro"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full inline-flex items-center justify-center bg-gp-primary hover:bg-gp-primary-700 text-white py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
@@ -498,7 +498,7 @@ export default function GestionProLanding() {
               </p>
               <div className="flex flex-col gap-4 sm:flex-row sm:justify-center animate-fade-in" style={{ animationDelay: "0.2s" }}>
                 <Link
-                  href="https://wa.me/3412714029?text=¡Hola!%20Me%20interesa%20comenzar%20la%20prueba%20gratis%20de%20GestiónPro"
+                  href="https://wa.me/3416171435?text=¡Hola!%20Me%20interesa%20comenzar%20la%20prueba%20gratis%20de%20GestiónPro"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center bg-white text-gp-primary hover:bg-gp-neutral-100 px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
@@ -823,7 +823,7 @@ export default function GestionProLanding() {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3 justify-center">
                     <Link
-                      href="https://wa.me/3412714029?text=¡Hola!%20Me%20interesa%20comenzar%20la%20prueba%20gratis%20de%20GestiónPro"
+                      href="https://wa.me/3416171435?text=¡Hola!%20Me%20interesa%20comenzar%20la%20prueba%20gratis%20de%20GestiónPro"
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={() => setShowDemo(false)}
@@ -844,7 +844,7 @@ export default function GestionProLanding() {
 
         {/* Floating WhatsApp Button */}
         <Link
-          href="https://wa.me/3412714029"
+          href="https://wa.me/3416171435?text=¡Hola!%20Me%20interesa%20GestiónPro"
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-6 right-6 z-50 flex h-16 w-16 items-center justify-center rounded-full bg-[#25D366] text-white shadow-2xl hover:bg-[#20ba5a] hover:scale-110 transition-all duration-300 animate-bounce-subtle"
@@ -882,6 +882,12 @@ export default function GestionProLanding() {
                     <Mail className="h-4 w-4" />
                     <a href="mailto:gestionproinfo@gmail.com" className="hover:text-gp-primary transition-colors">
                       gestionproinfo@gmail.com
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <MessageCircle className="h-4 w-4" />
+                    <a href="https://wa.me/3416171435" className="hover:text-gp-primary transition-colors">
+                      +54 9 341 617-1435
                     </a>
                   </div>
                 </div>
