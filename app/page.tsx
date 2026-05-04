@@ -49,11 +49,11 @@ export default function GestionProLanding() {
           </Link>
 
           <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
-            <Link href="#beneficios" className="text-gp-neutral-600 hover:text-gp-primary transition-colors">
-              Beneficios
+            <Link href="#problemas" className="text-gp-neutral-600 hover:text-gp-primary transition-colors">
+              Problemas que solucionamos
             </Link>
-            <Link href="#caracteristicas" className="text-gp-neutral-600 hover:text-gp-primary transition-colors">
-              Características
+            <Link href="#como-funciona" className="text-gp-neutral-600 hover:text-gp-primary transition-colors">
+              Cómo funciona
             </Link>
             <Link href="#precios" className="text-gp-neutral-600 hover:text-gp-primary transition-colors">
               Precios
@@ -67,7 +67,7 @@ export default function GestionProLanding() {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center bg-gp-primary hover:bg-gp-primary-700 text-white px-4 py-2 text-sm font-medium rounded-md transition-colors"
             >
-              Prueba Gratis
+              Escribinos
             </Link>
           </div>
         </div>
@@ -81,53 +81,56 @@ export default function GestionProLanding() {
             <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
               <div className="flex flex-col justify-center space-y-8 text-center lg:text-left">
                 <div className="space-y-4">
-
                   <h1 className="text-4xl font-bold tracking-tight text-gp-neutral-900 sm:text-5xl md:text-6xl lg:text-7xl uppercase">
-                    TODO TU NEGOCIO EN UNA SOLA PLATAFORMA
+                    ¿No sabés cuánto ganás en tu ferretería?
                   </h1>
                   <div className="mx-auto max-w-[700px] text-lg text-gp-neutral-600 lg:mx-0 md:text-xl space-y-2">
                     <p className="font-semibold text-gp-primary">
-                      Inventarios · Ventas · Comprobantes · Catálogos
+                      Dejá el cuaderno. Controlá ventas, stock y ganancias desde el celular.
                     </p>
-                    <p>
-                      Gestión simple · Inteligente · Centralizada
+                    <p className="text-gp-neutral-900 font-bold">
+                      “Si hoy no sabés cuánto ganaste, estás perdiendo plata.”
                     </p>
                   </div>
                 </div>
 
-                <div className="space-y-4">
+                <div className="space-y-6">
+                  <p className="text-sm font-medium text-gp-neutral-500 italic">
+                    Mirá cómo sería tu ferretería ordenada en menos de 1 minuto:
+                  </p>
                   <div className="flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
                     <Link
-                      href="https://wa.me/3416171435?text=¡Hola!%20Me%20interesa%20comenzar%20la%20prueba%20gratis%20de%20GestiónPro"
+                      href="https://wa.me/3416171435?text=¡Hola!%20Quiero%20dejar%20el%20cuaderno%20ahora%20con%20GestiónPro"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center bg-gp-primary hover:bg-gp-primary-700 text-white h-16 w-full sm:w-auto min-w-[240px] px-8 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                      className="inline-flex items-center justify-center bg-gp-olive hover:bg-gp-olive-700 text-white h-16 w-full sm:w-auto min-w-[240px] px-8 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                     >
-                      <Zap className="mr-2 h-5 w-5" />
-                      👉 Empezá hoy mismo
+                      <MessageCircle className="mr-2 h-5 w-5" />
+                      Quiero dejar el cuaderno ahora
                     </Link>
                     <Button
-                      variant="outline"
                       onClick={() => setShowDemo(true)}
-                      className="border-gp-primary text-gp-primary hover:bg-gp-primary hover:text-white h-16 w-full sm:w-auto min-w-[240px] px-8 text-lg font-semibold rounded-xl transition-all duration-300 bg-transparent"
+                      className="bg-gp-accent hover:bg-gp-accent-700 text-white h-16 w-full sm:w-auto min-w-[240px] px-8 text-lg font-semibold rounded-xl transition-all duration-300"
                     >
                       <Play className="mr-2 h-4 w-4" />
-                      Ver Demo
+                      Ver demo gratis
                     </Button>
                   </div>
-
+                  <p className="text-xs font-bold text-red-600 uppercase tracking-wider">
+                    En 1 día ya lo estás usando
+                  </p>
                   <div className="flex items-center justify-center lg:justify-start space-x-6 text-sm text-gp-neutral-600">
                     <div className="flex items-center space-x-1">
                       <CheckCircle className="h-4 w-4 text-gp-secondary" />
-                      <span>Sin tarjeta de crédito</span>
+                      <span>Se usa desde el celular</span>
                     </div>
                     <div className="flex items-center space-x-1">
                       <CheckCircle className="h-4 w-4 text-gp-secondary" />
-                      <span>Configuración en 5 min</span>
+                      <span>Listo en 5 minutos</span>
                     </div>
                     <div className="flex items-center space-x-1">
                       <CheckCircle className="h-4 w-4 text-gp-secondary" />
-                      <span>Soporte 24/7</span>
+                      <span>Soporte por WhatsApp</span>
                     </div>
                   </div>
                 </div>
@@ -137,10 +140,10 @@ export default function GestionProLanding() {
                 <div className="absolute inset-0 bg-gradient-to-r from-gp-primary/20 to-gp-secondary/20 rounded-3xl blur-3xl"></div>
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-white p-2 animate-fade-in" style={{ animationDelay: "0.2s" }}>
                   <Image
-                    src="/dashboard-hero.png"
+                    src="/ferreteria_dashboard_hero.png"
                     width={800}
                     height={600}
-                    alt="Dashboard de gestión de inventario en Gestión Pro Platform"
+                    alt="Dashboard de gestión de inventario para ferreterías"
                     className="w-full h-auto rounded-xl hover:scale-105 transition-transform duration-700"
                     priority
                   />
@@ -150,154 +153,188 @@ export default function GestionProLanding() {
           </div>
         </section>
 
-        {/* Trusted By Section */}
-        <section className="py-20 bg-gp-neutral-50 border-y border-gp-neutral-200">
-          <div className="container px-4 md:px-6">
-            <h2 className="text-center text-base font-bold text-gp-neutral-500 uppercase tracking-widest mb-16">
-              Empresas que confían en nuestra gestión
-            </h2>
-            <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
-              {[
-                "1729705753023.jfif",
-                "617034117_4788527218040726_5117380683503077795_n.jpg",
-                "7d933-250x250.jpg",
-                "images.jfif",
-                "logo-1456507262-1668522814-7d79597d3862ea29a60d937001284ecb1668522814-480-0.png",
-                "nuevo.png"
-              ].map((logo, index) => (
-                <div key={index} className="flex items-center justify-center">
-                  <Image
-                    src={`/confian/${logo}`}
-                    alt={`Empresa cliente ${index + 1}`}
-                    width={220}
-                    height={120}
-                    className="h-16 md:h-20 w-auto object-contain transition-transform duration-300 hover:scale-110"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
 
 
         {/* Beneficios Principales */}
-        <section id="beneficios" className="py-20 md:py-32">
+        <section id="problemas" className="py-20 md:py-32">
           <div className="container px-4 md:px-6">
             <div className="text-center mb-16">
               <Badge variant="outline" className="mb-4">
-                GestionPro Platform
+                Basta de líos
               </Badge>
               <h2 className="text-3xl font-bold tracking-tight text-gp-neutral-900 sm:text-4xl md:text-5xl mb-4 uppercase">
-                LA PLATAFORMA QUE CENTRALIZA LA GESTIÓN DE TU NEGOCIO
+                ¿TE PASA ESTO EN TU FERRETERÍA?
               </h2>
               <p className="mx-auto max-w-[800px] text-lg text-gp-neutral-600">
-                Todo en un solo lugar, simple y ordenado
+                Sabemos lo que es estar detrás del mostrador. Si te sentís identificado, podemos ayudarte.
               </p>
             </div>
 
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 mb-16">
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-16">
               <Card className="group hover:shadow-lg transition-all duration-300 border-0 shadow-md hover:shadow-xl hover:-translate-y-1 animate-fade-in" style={{ animationDelay: "0.1s" }}>
                 <CardContent className="p-8 text-center">
                   <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gp-primary-100 group-hover:bg-gp-primary group-hover:text-white transition-all duration-300">
                     <Warehouse className="h-8 w-8 text-gp-primary group-hover:text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gp-neutral-900 mb-2">Inventarios</h3>
-                  <p className="text-gp-neutral-600">Control total de tu stock</p>
+                  <h3 className="text-xl font-semibold text-gp-neutral-900 mb-2">Faltantes de stock</h3>
+                  <p className="text-gp-neutral-600">¿Te das cuenta que no tenés algo justo cuando el cliente te lo pide?</p>
                 </CardContent>
               </Card>
 
               <Card className="group hover:shadow-lg transition-all duration-300 border-0 shadow-md hover:shadow-xl hover:-translate-y-1 animate-fade-in" style={{ animationDelay: "0.2s" }}>
                 <CardContent className="p-8 text-center">
                   <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gp-secondary-100 group-hover:bg-gp-secondary group-hover:text-white transition-all duration-300">
-                    <FileText className="h-8 w-8 text-gp-secondary group-hover:text-white" />
+                    <TrendingUp className="h-8 w-8 text-gp-secondary group-hover:text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gp-neutral-900 mb-2">Comprobantes</h3>
-                  <p className="text-gp-neutral-600">Comprobantes internos al instante</p>
+                  <h3 className="text-xl font-semibold text-gp-neutral-900 mb-2">Ganancias ciegas</h3>
+                  <p className="text-gp-neutral-600">¿Vendés mucho pero no sabés cuánta plata te quedó realmente al final del día?</p>
                 </CardContent>
               </Card>
 
               <Card className="group hover:shadow-lg transition-all duration-300 border-0 shadow-md hover:shadow-xl hover:-translate-y-1 animate-fade-in" style={{ animationDelay: "0.3s" }}>
                 <CardContent className="p-8 text-center">
                   <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gp-accent-100 group-hover:bg-gp-accent group-hover:text-white transition-all duration-300">
-                    <ShoppingCart className="h-8 w-8 text-gp-accent group-hover:text-white" />
+                    <RefreshCw className="h-8 w-8 text-gp-accent group-hover:text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gp-neutral-900 mb-2">Ventas</h3>
-                  <p className="text-gp-neutral-600">Gestiona tus ventas fácilmente</p>
+                  <h3 className="text-xl font-semibold text-gp-neutral-900 mb-2">Precios desactualizados</h3>
+                  <p className="text-gp-neutral-600">¿Con la inflación perdés tiempo y plata remarcando o cobrando mal?</p>
                 </CardContent>
               </Card>
 
               <Card className="group hover:shadow-lg transition-all duration-300 border-0 shadow-md hover:shadow-xl hover:-translate-y-1 animate-fade-in" style={{ animationDelay: "0.4s" }}>
                 <CardContent className="p-8 text-center">
                   <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gp-primary-100 group-hover:bg-gp-primary group-hover:text-white transition-all duration-300">
-                    <Store className="h-8 w-8 text-gp-primary group-hover:text-white" />
+                    <BookOpen className="h-8 w-8 text-gp-primary group-hover:text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gp-neutral-900 mb-2">Catálogos digitales</h3>
-                  <p className="text-gp-neutral-600">Tu tienda online siempre abierta</p>
+                  <h3 className="text-xl font-semibold text-gp-neutral-900 mb-2">Esclavo del papel</h3>
+                  <p className="text-gp-neutral-600">¿Tenés todo anotado en cuadernos que son un quilombo de entender?</p>
+                </CardContent>
+              </Card>
+
+              <Card className="group hover:shadow-lg transition-all duration-300 border-0 shadow-md hover:shadow-xl hover:-translate-y-1 animate-fade-in" style={{ animationDelay: "0.5s" }}>
+                <CardContent className="p-8 text-center">
+                  <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gp-secondary-100 group-hover:bg-gp-secondary group-hover:text-white transition-all duration-300">
+                    <Handshake className="h-8 w-8 text-gp-secondary group-hover:text-white" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-gp-neutral-900 mb-2">Fiados olvidados</h3>
+                  <p className="text-gp-neutral-600">¿Perdés plata porque te olvidás quién te debe o no encontrás el papelito?</p>
+                </CardContent>
+              </Card>
+
+              <Card className="group hover:shadow-lg transition-all duration-300 border-0 shadow-md hover:shadow-xl hover:-translate-y-1 animate-fade-in" style={{ animationDelay: "0.6s" }}>
+                <CardContent className="p-8 text-center">
+                  <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gp-accent-100 group-hover:bg-gp-accent group-hover:text-white transition-all duration-300">
+                    <Lock className="h-8 w-8 text-gp-accent group-hover:text-white" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-gp-neutral-900 mb-2">Atado al mostrador</h3>
+                  <p className="text-gp-neutral-600">¿Sentís que si no estás vos el negocio no camina o se pierde mercadería?</p>
                 </CardContent>
               </Card>
             </div>
 
             <div className="flex justify-center">
               <Link
-                href="https://wa.me/3416171435?text=¡Hola!%20Me%20interesa%20comenzar%20la%20prueba%20gratis%20de%20GestiónPro"
+                href="https://wa.me/3416171435?text=¡Hola!%20Quiero%20ordenar%20mi%20ferretería%20con%20GestiónPro"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center bg-gp-primary hover:bg-gp-primary-700 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                className="inline-flex items-center justify-center bg-gp-olive hover:bg-gp-olive-700 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               >
-                <Zap className="mr-2 h-5 w-5" />
-                👉 EMPEZÁ A GESTIONAR MEJOR HOY
+                <MessageCircle className="mr-2 h-5 w-5" />
+                SÍ, QUIERO PONER ORDEN AHORA
               </Link>
             </div>
           </div>
         </section>
 
         {/* Solución Integral */}
-        <section id="caracteristicas" className="py-20 md:py-32">
+        <section id="como-funciona" className="py-20 md:py-32">
           <div className="container px-4 md:px-6">
-            <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-gp-primary-600/85 to-gp-primary-500/85 backdrop-blur-lg px-6 py-16 md:px-16 md:py-24 text-center shadow-2xl">
+            <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-gp-primary-900 to-gp-accent-700 backdrop-blur-lg px-6 py-16 md:px-16 md:py-24 text-center shadow-2xl">
               {/* Efectos de Fondo */}
-              <div className="absolute top-0 left-0 -mt-20 -ml-20 h-96 w-96 rounded-full bg-gp-primary/20 blur-3xl opacity-30 animate-pulse"></div>
-              <div className="absolute bottom-0 right-0 -mb-20 -mr-20 h-96 w-96 rounded-full bg-gp-secondary/20 blur-3xl opacity-30 animate-pulse delay-700"></div>
+              <div className="absolute top-0 left-0 -mt-20 -ml-20 h-96 w-96 rounded-full bg-gp-accent/20 blur-3xl opacity-30 animate-pulse"></div>
+              <div className="absolute bottom-0 right-0 -mb-20 -mr-20 h-96 w-96 rounded-full bg-gp-primary/20 blur-3xl opacity-30 animate-pulse delay-700"></div>
 
               <div className="relative z-10 max-w-4xl mx-auto space-y-10">
                 <div className="inline-block animate-fade-in-up">
                   <div className="inline-flex items-center rounded-full bg-white/10 px-6 py-2 backdrop-blur-sm border border-white/10 shadow-lg">
-                    <span className="text-sm md:text-base font-bold text-rose-300 tracking-wide uppercase">
-                      ¿CANSADO DE MANEJAR TODO POR SEPARADO?
+                    <span className="text-sm md:text-base font-bold text-gp-accent-300 tracking-wide uppercase">
+                      TOMÁ EL CONTROL DE TU NEGOCIO
                     </span>
                   </div>
                 </div>
 
                 <div className="space-y-6">
-                  <h3 className="text-4xl md:text-6xl font-bold text-white tracking-tight">
-                    Gestión Pro Platform
+                  <h3 className="text-4xl md:text-6xl font-bold text-white tracking-tight uppercase">
+                    Una herramienta simple
                   </h3>
-                  <p className="text-2xl md:text-3xl text-gp-primary-300 font-medium">
-                    Gestión comercial inteligente para tu negocio
+                  <p className="text-2xl md:text-3xl text-gp-accent-200 font-bold uppercase">
+                    Para vender más y vivir más tranquilo
                   </p>
                 </div>
 
                 <div className="p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 max-w-3xl mx-auto">
-                  <p className="text-lg md:text-xl text-gp-neutral-300 leading-relaxed">
-                    Controlá inventarios, ventas y comprobantes desde una sola plataforma
+                  <p className="text-lg md:text-xl text-white leading-relaxed">
+                    Hacé una venta en 2 clicks, controlá tu stock al instante y mirá tus ganancias reales desde el celular.
                     <br className="my-2 block" />
-                    <span className="text-white font-semibold">Más orden, más control, menos complicaciones</span>
+                    <span className="text-gp-accent-200 font-bold uppercase">Sin complicaciones, pensado para el ferretero.</span>
                   </p>
                 </div>
 
                 <div className="pt-4">
                   <Link
-                    href="https://wa.me/3416171435?text=¡Hola!%20Me%20interesa%20comenzar%20la%20prueba%20gratis%20de%20GestiónPro"
+                    href="https://wa.me/3416171435?text=¡Hola!%20Quiero%20dejar%20el%20cuaderno%20ahora%20con%20GestiónPro"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center bg-white text-gp-primary hover:bg-gp-neutral-100 h-16 px-10 text-lg font-bold rounded-xl shadow-[0_0_30px_rgba(255,255,255,0.2)] hover:shadow-[0_0_40px_rgba(255,255,255,0.4)] transition-all duration-300 transform hover:scale-105"
+                    className="inline-flex items-center justify-center bg-gp-accent text-white hover:bg-gp-accent-700 h-16 px-10 text-lg font-bold rounded-xl shadow-[0_0_30px_rgba(234,88,12,0.3)] hover:shadow-[0_0_40px_rgba(234,88,12,0.5)] transition-all duration-300 transform hover:scale-105"
                   >
-                    <Zap className="mr-2 h-5 w-5" />
-                    COMENZÁ TU PRUEBA GRATIS HOY
+                    <MessageCircle className="mr-2 h-5 w-5" />
+                    QUIERO EMPEZAR AHORA
                   </Link>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Pasos */}
+        <section className="py-20 md:py-32 bg-gp-neutral-50">
+          <div className="container px-4 md:px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl font-bold tracking-tight text-gp-neutral-900 sm:text-4xl md:text-5xl mb-4">
+                EMPEZÁ HOY MISMO EN 3 PASOS
+              </h2>
+              <p className="mx-auto max-w-[800px] text-lg text-gp-neutral-600">
+                Es tan fácil que no lo vas a poder creer
+              </p>
+            </div>
+
+            <div className="grid gap-8 md:grid-cols-3 max-w-4xl mx-auto">
+              {[
+                {
+                  icon: MessageCircle,
+                  title: "1. Escribinos por WhatsApp",
+                  description: "Nos contás cómo es tu negocio y te sacás todas las dudas en 2 minutos.",
+                },
+                {
+                  icon: RefreshCw,
+                  title: "2. Cargamos tus productos",
+                  description: "Te ayudamos a pasar toda tu mercadería rápido para que no pierdas tiempo.",
+                },
+                {
+                  icon: Zap,
+                  title: "3. Empezás a vender",
+                  description: "Ya tenés todo ordenado y empezás a controlar tus ganancias desde el primer día.",
+                },
+              ].map((paso, index) => (
+                <div key={index} className="text-center p-6 animate-fade-in" style={{ animationDelay: `${(index + 1) * 0.1}s` }}>
+                  <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gp-accent-100">
+                    <paso.icon className="h-8 w-8 text-gp-accent" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-gp-neutral-900 mb-2">{paso.title}</h3>
+                  <p className="text-gp-neutral-600 text-sm">{paso.description}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -308,78 +345,83 @@ export default function GestionProLanding() {
         <section id="precios" className="py-20 md:py-32 bg-gp-neutral-50">
           <div className="container px-4 md:px-6">
             <div className="text-center mb-16">
-              <Badge variant="outline" className="mb-4">
-                Precios
+              <Badge className="bg-gp-accent text-white px-4 py-1 mb-4 uppercase text-xs font-bold tracking-widest">
+                Inversión Inteligente
               </Badge>
-              <h2 className="text-3xl font-bold tracking-tight text-gp-neutral-900 sm:text-4xl md:text-5xl mb-4">
-                Plan Único Todo Incluido
+              <h2 className="text-3xl font-bold tracking-tight text-gp-neutral-900 sm:text-4xl md:text-5xl mb-4 uppercase">
+                Un precio que se paga solo
               </h2>
-              <p className="mx-auto max-w-[800px] text-lg text-gp-neutral-600">
-                Accede a todas las funcionalidades de Gestión Pro Platform sin límites ni restricciones
+              <p className="mx-auto max-w-[800px] text-lg text-gp-neutral-600 font-medium italic">
+                Hoy estás perdiendo mucha más plata por el desorden que lo que cuesta esta herramienta.
               </p>
             </div>
 
             <div className="flex justify-center animate-fade-in" style={{ animationDelay: "0.2s" }}>
-              <Card className="w-full max-w-lg border-2 border-gp-primary shadow-2xl hover:scale-[1.02] transition-transform duration-500">
-                <CardHeader className="text-center pb-8 pt-8">
+              <Card className="w-full max-w-lg border-4 border-gp-accent shadow-2xl hover:scale-[1.02] transition-transform duration-500 bg-white">
+                <CardHeader className="text-center pb-6 pt-10">
                   <div className="mb-4">
-                    <Badge className="bg-gp-primary text-white px-4 py-1">Más Popular</Badge>
+                    <Badge className="bg-gp-primary text-white px-6 py-2 text-sm font-bold animate-pulse">
+                      ¡LO RECUPERÁS EN LA PRIMERA SEMANA!
+                    </Badge>
                   </div>
-                  <CardTitle className="text-3xl font-bold text-gp-neutral-900 mb-2">Plan Integral</CardTitle>
-                  <p className="text-gp-neutral-600">La plataforma completa para tu negocio</p>
+                  <CardTitle className="text-3xl font-bold text-gp-neutral-900 mb-2 uppercase">Plan Todo Incluido</CardTitle>
+                  <p className="text-gp-neutral-600 font-medium italic">Sin vueltas ni costos ocultos</p>
                 </CardHeader>
-                <CardContent className="px-8 pb-8">
-                  <div className="text-center mb-8">
+                <CardContent className="px-8 pb-10">
+                  <div className="text-center mb-10">
                     <div className="flex flex-col items-center mb-4">
-                      <div className="flex items-baseline justify-center">
-                        <span className="text-5xl font-bold text-gp-neutral-900">$25.000</span>
-                        <span className="text-xl text-gp-neutral-600 ml-1">/mes</span>
+                      <div className="flex items-baseline justify-center bg-gp-accent-50 px-6 py-4 rounded-3xl border-2 border-gp-accent-100">
+                        <span className="text-6xl font-black text-gp-accent">$25.000</span>
+                        <span className="text-xl text-gp-accent-700 ml-1 font-bold">/mes</span>
                       </div>
-                      <div className="mt-2">
-                        <Badge className="bg-gp-accent text-white px-3 py-1 uppercase text-xs font-bold tracking-wider">
-                          Precio de Lanzamiento
-                        </Badge>
-                      </div>
+
                     </div>
-                    <p className="text-lg font-semibold text-gp-secondary">o $175.000/año (¡Ahorra 5 meses!)</p>
                   </div>
 
-                  <ul className="space-y-4 mb-8">
+                  <ul className="space-y-5 mb-10">
                     {[
-                      "Todos los módulos incluidos",
-                      "Usuarios ilimitados",
-                      "Soporte prioritario 24/7",
-                      "Backup automático diario",
-                      "Actualizaciones gratuitas",
-                      "Integración WhatsApp Business",
-                      "Catálogo digital público",
-                      "Reportes avanzados",
-                      "Comprobantes digitales y tickets",
-                      "Migración gratuita de datos",
+                      { t: "Sabés cuánto ganás por día al instante", d: "Se acabó el 'creo que gané plata'" },
+                      { t: "No perdés más stock", d: "Vas a saber qué tenés y qué te falta sin dar vueltas" },
+                      { t: "Tenés todo ordenado en el celu", d: "Dejá el cuaderno y buscá todo en un click" },
+                      { t: "Vendés más tranquilo", d: "Atendé más rápido y sin errores de precio" },
                     ].map((feature, index) => (
-                      <li key={index} className="flex items-center space-x-3">
-                        <CheckCircle className="h-5 w-5 text-gp-secondary shrink-0" />
-                        <span className="text-gp-neutral-700">{feature}</span>
+                      <li key={index} className="flex items-start space-x-3">
+                        <CheckCircle className="h-6 w-6 text-gp-olive shrink-0 mt-0.5" />
+                        <div>
+                          <p className="text-gp-neutral-900 font-bold leading-tight">{feature.t}</p>
+                          <p className="text-gp-neutral-500 text-sm italic">{feature.d}</p>
+                        </div>
                       </li>
                     ))}
                   </ul>
 
-                  <Link
-                    href="https://wa.me/3416171435?text=¡Hola!%20Me%20interesa%20comenzar%20la%20prueba%20gratis%20de%20GestiónPro"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full inline-flex items-center justify-center bg-gp-primary hover:bg-gp-primary-700 text-white py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-                  >
-                    <Zap className="mr-2 h-5 w-5" />
-                    👉 Comenzar Prueba Gratis
-                  </Link>
+                  <div className="space-y-4">
+                    <div className="p-5 bg-gp-primary-50 rounded-2xl border border-gp-primary-100 italic text-gp-primary-900 text-center text-sm md:text-base font-medium">
+                      “Con solo <strong>1 error de stock</strong> o <strong>un precio mal cobrado</strong> ya perdés más plata que el costo mensual de GestiónPro.”
+                    </div>
 
-                  <p className="text-center text-sm text-gp-neutral-500 mt-4 font-medium">
-                    🔒 Precio congelado de por vida al suscribirte hoy
-                  </p>
-                  <p className="text-center text-xs text-gp-neutral-400 mt-1">
-                    Sin tarjeta de crédito requerida • Cancela cuando quieras
-                  </p>
+                    <Link
+                      href="https://wa.me/3416171435?text=¡Hola!%20Quiero%20aprovechar%20el%20precio%20de%20lanzamiento%20de%20GestiónPro"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full inline-flex items-center justify-center bg-gp-olive hover:bg-gp-olive-700 text-white py-6 text-xl font-black rounded-2xl shadow-[0_10px_20px_rgba(91,137,7,0.3)] hover:shadow-[0_15px_30px_rgba(91,137,7,0.5)] transition-all duration-300 transform hover:scale-105 uppercase tracking-wide"
+                    >
+                      <MessageCircle className="mr-2 h-6 w-6" />
+                      Escribime por WhatsApp
+                    </Link>
+
+                    <div className="grid grid-cols-2 gap-2 text-center pt-2">
+                      <div className="text-xs font-bold text-gp-neutral-600 bg-gp-neutral-100 py-2 rounded-lg border border-gp-neutral-200">
+                        ✅ Probalo Gratis
+                      </div>
+                      <div className="text-xs font-bold text-gp-neutral-600 bg-gp-neutral-100 py-2 rounded-lg border border-gp-neutral-200">
+                        🤝 Sin contratos raros
+                      </div>
+                      <div className="col-span-2 text-xs font-bold text-gp-primary-600 bg-gp-primary-50 py-2 rounded-lg border border-gp-primary-100">
+                        🚀 Te ayudamos a configurar todo hoy mismo
+                      </div>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
             </div>
@@ -391,34 +433,34 @@ export default function GestionProLanding() {
           <div className="container px-4 md:px-6">
             <div className="text-center mb-16">
               <Badge variant="outline" className="mb-4">
-                Garantías
+                Tranquilidad
               </Badge>
               <h2 className="text-3xl font-bold tracking-tight text-gp-neutral-900 sm:text-4xl md:text-5xl mb-4">
-                Nuestro Compromiso Contigo
+                NUESTRO COMPROMISO CON VOS
               </h2>
               <p className="mx-auto max-w-[800px] text-lg text-gp-neutral-600">
-                Estamos comprometidos con tu éxito y satisfacción total
+                Si sabés usar WhatsApp, sabés usar Gestión Pro.
               </p>
             </div>
 
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
               {[
                 {
-                  icon: CalendarCheck,
-                  title: "Prueba Gratis 14 Días",
-                  description: "Experimenta GestiónPro sin compromiso",
+                  icon: MessageCircle,
+                  title: "Soporte humano",
+                  description: "Hablás con personas reales que te ayudan por WhatsApp.",
                 },
-                { icon: Shield, title: "Garantía de Satisfacción", description: "30 días o devolvemos tu dinero" },
-                { icon: Headset, title: "Soporte Incluido", description: "Asistencia técnica sin costo adicional" },
+                { icon: Shield, title: "Tus datos seguros", description: "Toda tu información protegida y siempre disponible." },
+                { icon: Headset, title: "Te enseñamos todo", description: "Te explicamos paso a paso cómo usarlo en tu mostrador." },
                 {
                   icon: Handshake,
-                  title: "Migración Gratuita",
-                  description: "Te ayudamos a migrar desde otros sistemas",
+                  title: "Chau complicaciones",
+                  description: "Si no te sirve, te vas cuando quieras. Sin contratos raros.",
                 },
               ].map((guarantee, index) => (
                 <div key={index} className="text-center p-6 animate-fade-in" style={{ animationDelay: `${(index + 1) * 0.1}s` }}>
-                  <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gp-primary-100">
-                    <guarantee.icon className="h-8 w-8 text-gp-primary" />
+                  <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gp-accent-100">
+                    <guarantee.icon className="h-8 w-8 text-gp-accent" />
                   </div>
                   <h3 className="text-lg font-semibold text-gp-neutral-900 mb-2">{guarantee.title}</h3>
                   <p className="text-gp-neutral-600 text-sm">{guarantee.description}</p>
@@ -446,33 +488,33 @@ export default function GestionProLanding() {
             <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto">
               {[
                 {
-                  question: "¿Necesito conocimientos técnicos para usar GestiónPro?",
+                  question: "¿Necesito saber mucho de computación para usarlo?",
                   answer:
-                    "No, GestiónPro está diseñado para ser intuitivo y fácil de usar, incluso para personas sin experiencia técnica Ofrecemos tutoriales completos y soporte personalizado para ayudarte en cada paso",
+                    "Para nada. Si sabés mandar un mensaje por WhatsApp, sabés usar GestiónPro. Es súper intuitivo y te enseñamos todo lo que necesités.",
                 },
                 {
-                  question: "¿Puedo usar el sistema desde mi celular?",
+                  question: "¿Puedo usarlo desde mi celular?",
                   answer:
-                    "Sí, GestiónPro es 100% responsivo y accesible desde cualquier dispositivo con conexión a internet, incluyendo smartphones, tablets y computadoras",
+                    "Sí, podés cargar ventas y ver tu stock desde el celu, la tablet o la compu. Solo necesitás conexión a internet.",
                 },
                 {
-                  question: "¿Qué pasa con mis datos si cancelo mi suscripción?",
+                  question: "¿Qué pasa con mi información si dejo de usarlo?",
                   answer:
-                    "Puedes exportar todos tus datos en cualquier momento en formatos estándar Una vez que canceles, tus datos se mantendrán disponibles por 90 días antes de ser eliminados de forma segura",
+                    "Tus datos son tuyos. Podés bajarlos cuando quieras. Si decidís no seguir, guardamos todo por 90 días por si te arrepentís.",
                 },
                 {
-                  question: "¿Puedo emitir comprobantes y tickets?",
+                  question: "¿Puedo darles un papel o ticket a mis clientes?",
                   answer:
-                    "Sí, GestiónPro incluye un módulo completo de emisión de comprobantes internos y tickets que te permite entregar recibos a tus clientes de forma automática y profesional",
+                    "Sí, podés generar comprobantes de venta y tickets al instante para mandarlos por WhatsApp o imprimirlos.",
                 },
                 {
-                  question: "¿Puedo personalizar el sistema?",
+                  question: "¿Me ayudan a cargar mis productos?",
                   answer:
-                    "Absolutamente GestiónPro ofrece múltiples opciones de personalización incluyendo campos personalizados, reportes adaptados, y configuraciones específicas para tu industria",
+                    "¡Claro que sí! No te dejamos solo. Te ayudamos a pasar toda tu mercadería para que empieces con el pie derecho.",
                 },
               ].map((faq, index) => (
                 <AccordionItem key={index} value={`item-${index + 1}`}>
-                  <AccordionTrigger className="text-left text-lg font-semibold text-gp-neutral-900 hover:text-gp-primary">
+                  <AccordionTrigger className="text-left text-lg font-semibold text-gp-neutral-900 hover:text-gp-accent">
                     {faq.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-gp-neutral-700 leading-relaxed">{faq.answer}</AccordionContent>
@@ -482,29 +524,62 @@ export default function GestionProLanding() {
           </div>
         </section>
 
+        {/* Testimonios */}
+        <section className="py-20 md:py-32">
+          <div className="container px-4 md:px-6">
+            <h2 className="text-3xl font-bold text-center mb-16 text-gp-neutral-900 uppercase">Lo que dicen otros ferreteros</h2>
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+              {[
+                {
+                  text: "Antes usaba cuaderno y era un lío. Por fin sé cuánta plata gano por día. Antes era todo a ojo y siempre me faltaba guita.",
+                  author: "Jorge G.",
+                  biz: "Ferretería El Tornillo",
+                },
+                {
+                  text: "Dejé el papel por Gestión Pro. Cargar los precios nuevos me tomaba horas con la inflación. Ahora lo hago en 10 minutos desde el celu.",
+                  author: "Marta R.",
+                  biz: "Ferretería Industrial Rosario",
+                },
+                {
+                  text: "Me cansé de perder plata con el cuaderno. Lo que más me sirve es el control de fiados. Ya no me olvido de cobrarle a nadie.",
+                  author: "Ricardo P.",
+                  biz: "Ferretería San José",
+                },
+              ].map((testimonio, index) => (
+                <Card key={index} className="bg-gp-neutral-50 border-none shadow-sm p-6 italic text-gp-neutral-700">
+                  <p className="mb-4">"{testimonio.text}"</p>
+                  <div className="not-italic font-bold text-gp-primary">{testimonio.author}</div>
+                  <div className="not-italic text-sm text-gp-neutral-500">{testimonio.biz}</div>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* CTA Final */}
-        <section className="py-20 md:py-32 bg-gradient-to-r from-gp-primary to-gp-secondary text-white">
+        <section className="py-20 md:py-32 bg-gradient-to-r from-gp-primary to-gp-accent text-white">
           <div className="container px-4 md:px-6 text-center">
             <div className="mx-auto max-w-3xl space-y-8">
-              <Badge variant="secondary" className="bg-white/20 text-white hover:bg-white/30">
-                ¡Únete a más de 200 empresas exitosas!
+              <Badge variant="secondary" className="bg-white/20 text-white hover:bg-white/30 border-gp-accent-300">
+                ¡Sumate a las ferreterías que ya ganan tiempo!
               </Badge>
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-                Comienza a transformar tu negocio hoy mismo
+                ¿Listo para poner en orden tu ferretería?
               </h2>
               <p className="text-xl text-white/90 leading-relaxed animate-fade-in" style={{ animationDelay: "0.1s" }}>
-                Únete a cientos de empresas que ya están revolucionando su gestión con Gestión Pro Platform Sin compromisos, sin
-                complicaciones
+                No sigas perdiendo plata por el desorden del cuaderno. 
+                <br />
+                Escribinos ahora y empezá hoy mismo a laburar mejor.
               </p>
               <div className="flex flex-col gap-4 sm:flex-row sm:justify-center animate-fade-in" style={{ animationDelay: "0.2s" }}>
                 <Link
-                  href="https://wa.me/3416171435?text=¡Hola!%20Me%20interesa%20comenzar%20la%20prueba%20gratis%20de%20GestiónPro"
+                  href="https://wa.me/3416171435?text=¡Hola!%20Quiero%20más%20información%20para%20mi%20ferretería"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center bg-white text-gp-primary hover:bg-gp-neutral-100 px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                  className="inline-flex items-center justify-center bg-gp-olive hover:bg-gp-olive-700 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                 >
-                  <Zap className="mr-2 h-5 w-5" />
-                  👉 Comenzar Prueba Gratis
+                  <MessageCircle className="mr-2 h-5 w-5" />
+                  Escribinos por WhatsApp
                 </Link>
               </div>
               <div className="flex items-center justify-center space-x-6 text-sm text-white/80 animate-fade-in" style={{ animationDelay: "0.3s" }}>
@@ -533,7 +608,7 @@ export default function GestionProLanding() {
               <div className="flex items-center justify-between p-4 md:p-6 border-b bg-gradient-to-r from-gp-primary to-gp-secondary text-white flex-shrink-0">
                 <div className="flex items-center space-x-3">
                   <Image src="/logonuevo.png" width={32} height={32} alt="Logo Gestión Pro" className="h-8 w-8" />
-                  <h3 className="text-lg md:text-xl font-bold">Demo Interactivo - Gestión Pro</h3>
+                  <h3 className="text-lg md:text-xl font-bold">Mirá lo fácil que es - Gestión Pro</h3>
                 </div>
                 <button
                   onClick={() => setShowDemo(false)}
@@ -553,11 +628,14 @@ export default function GestionProLanding() {
                     <div className="space-y-6">
                       <div className="text-center mb-6">
                         <h4 className="text-xl md:text-2xl font-bold text-gp-neutral-900 mb-2">
-                          Descubre cómo Gestión Pro Platform transforma tu negocio
+                          Mirá lo fácil que es manejar tu ferretería
                         </h4>
-                        <p className="text-sm md:text-base text-gp-neutral-600">
-                          Haz clic en cada módulo para ver cómo funciona
+                        <p className="text-sm md:text-base text-gp-neutral-600 mb-4">
+                          Tocá los botones de abajo y comprobá que es simple de verdad.
                         </p>
+                        <Badge className="bg-red-600 text-white animate-pulse">
+                          En 1 día ya lo estás usando
+                        </Badge>
                       </div>
 
                       <div className="grid gap-3 md:gap-4 sm:grid-cols-2">
@@ -584,10 +662,17 @@ export default function GestionProLanding() {
                             color: "gp-accent",
                           },
                           {
+                            id: 4,
+                            icon: Users,
+                            title: "Fiados",
+                            description: "Control de deudas",
+                            color: "gp-secondary",
+                          },
+                          {
                             id: 3,
                             icon: BarChart3,
                             title: "Reportes",
-                            description: "Análisis en tiempo real",
+                            description: "Ganancias al día",
                             color: "gp-primary",
                           },
                         ].map((module) => (
@@ -625,7 +710,7 @@ export default function GestionProLanding() {
                           <div className="space-y-3">
                             <div className="bg-white p-3 md:p-4 rounded-lg shadow-sm animate-slide-in">
                               <div className="flex items-center justify-between">
-                                <span className="text-sm md:text-base font-medium">Producto A</span>
+                                <span className="text-sm md:text-base font-medium">Martillo Galponero</span>
                                 <span className="text-sm md:text-base text-gp-secondary font-bold">Stock: 25</span>
                               </div>
                               <div className="w-full bg-gp-neutral-200 rounded-full h-2 mt-2">
@@ -640,7 +725,7 @@ export default function GestionProLanding() {
                               style={{ animationDelay: "0.2s" }}
                             >
                               <div className="flex items-center justify-between">
-                                <span className="text-sm md:text-base font-medium">Producto B</span>
+                                <span className="text-sm md:text-base font-medium">Pintura Látex 20L</span>
                                 <span className="text-sm md:text-base text-red-500 font-bold">Stock: 3 ⚠️</span>
                               </div>
                               <div className="w-full bg-gp-neutral-200 rounded-full h-2 mt-2">
@@ -655,7 +740,7 @@ export default function GestionProLanding() {
                               style={{ animationDelay: "0.4s" }}
                             >
                               <p className="text-xs md:text-sm text-gp-primary-800">
-                                🔔 <strong>Alerta automática:</strong> Producto B necesita reposición
+                                🔔 <strong>Alerta automática:</strong> Pintura Látex necesita reposición
                               </p>
                             </div>
                           </div>
@@ -673,7 +758,7 @@ export default function GestionProLanding() {
                                 <span className="text-sm md:text-base font-medium">1. Seleccionar producto</span>
                                 <CheckCircle className="h-4 w-4 md:h-5 md:w-5 text-gp-secondary" />
                               </div>
-                              <div className="text-xs md:text-sm text-gp-neutral-600">Producto A - $15.000</div>
+                              <div className="text-xs md:text-sm text-gp-neutral-600">Taladro Percutor - $85.000</div>
                             </div>
                             <div
                               className="bg-white p-3 md:p-4 rounded-lg shadow-sm animate-slide-in"
@@ -683,14 +768,14 @@ export default function GestionProLanding() {
                                 <span className="text-sm md:text-base font-medium">2. Confirmar cantidad</span>
                                 <CheckCircle className="h-4 w-4 md:h-5 md:w-5 text-gp-secondary" />
                               </div>
-                              <div className="text-xs md:text-sm text-gp-neutral-600">Cantidad: 2 unidades</div>
+                              <div className="text-xs md:text-sm text-gp-neutral-600">Cantidad: 1 unidad</div>
                             </div>
                             <div
                               className="bg-white p-3 md:p-4 rounded-lg shadow-sm animate-slide-in"
                               style={{ animationDelay: "0.6s" }}
                             >
                               <div className="flex items-center justify-between mb-2">
-                                <span className="text-sm md:text-base font-medium">3. Generar comprobante</span>
+                                <span className="text-sm md:text-base font-medium">3. Generar ticket</span>
                                 <div className="animate-spin h-4 w-4 md:h-5 md:w-5 border-2 border-gp-secondary border-t-transparent rounded-full"></div>
                               </div>
                               <div className="text-xs md:text-sm text-gp-neutral-600">Procesando</div>
@@ -700,7 +785,7 @@ export default function GestionProLanding() {
                               style={{ animationDelay: "0.9s" }}
                             >
                               <p className="text-xs md:text-sm text-gp-secondary-800">
-                                ✅ <strong>Venta completada:</strong> Total $30.000
+                                ✅ <strong>Venta completada:</strong> Total $85.000
                               </p>
                             </div>
                           </div>
@@ -730,12 +815,12 @@ export default function GestionProLanding() {
                               </div>
                               <div className="border-t pt-2 mt-2">
                                 <div className="flex justify-between">
-                                  <span>Producto A x2</span>
-                                  <span>$30.000</span>
+                                  <span>Martillo Galponero x1</span>
+                                  <span>$15.000</span>
                                 </div>
                                 <div className="flex justify-between font-bold text-base md:text-lg mt-2">
                                   <span>Total:</span>
-                                  <span>$30.000</span>
+                                  <span>$15.000</span>
                                 </div>
                               </div>
                             </div>
@@ -754,10 +839,39 @@ export default function GestionProLanding() {
                         </div>
                       )}
 
+                      {currentDemoStep === 4 && (
+                        <div className="w-full space-y-4 animate-fade-in">
+                          <h5 className="text-base md:text-lg font-bold text-gp-neutral-900 mb-4">
+                            🤝 Control de Fiados (Cuentas Corrientes)
+                          </h5>
+                          <div className="space-y-3">
+                            <div className="bg-white p-3 md:p-4 rounded-lg shadow-sm animate-slide-in">
+                              <div className="flex items-center justify-between">
+                                <span className="text-sm md:text-base font-medium">Juan Pérez</span>
+                                <span className="text-sm md:text-base text-red-600 font-bold">Debe: $12.500</span>
+                              </div>
+                              <p className="text-xs text-gp-neutral-500 mt-1">Última compra: Hace 3 días</p>
+                            </div>
+                            <div className="bg-white p-3 md:p-4 rounded-lg shadow-sm animate-slide-in" style={{ animationDelay: "0.2s" }}>
+                              <div className="flex items-center justify-between">
+                                <span className="text-sm md:text-base font-medium">Taller Los Primos</span>
+                                <span className="text-sm md:text-base text-red-600 font-bold">Debe: $45.200</span>
+                              </div>
+                              <p className="text-xs text-gp-neutral-500 mt-1">Última compra: Hoy</p>
+                            </div>
+                            <div className="bg-gp-secondary-50 border border-gp-secondary-200 p-3 rounded-lg animate-slide-in" style={{ animationDelay: "0.4s" }}>
+                              <p className="text-xs md:text-sm text-gp-secondary-800">
+                                ✅ <strong>¡Cobro fácil!</strong> Tocás un botón y le mandás el resumen por WhatsApp.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      )}
+
                       {currentDemoStep === 3 && (
                         <div className="w-full space-y-4 animate-fade-in">
                           <h5 className="text-base md:text-lg font-bold text-gp-neutral-900 mb-4">
-                            📊 Reportes en Tiempo Real
+                            📊 Ganancias al día
                           </h5>
                           <div className="space-y-4">
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -779,10 +893,10 @@ export default function GestionProLanding() {
                               className="bg-white p-3 md:p-4 rounded-lg shadow-sm animate-slide-in"
                               style={{ animationDelay: "0.4s" }}
                             >
-                              <div className="text-xs md:text-sm font-medium mb-2">Productos más vendidos</div>
+                              <div className="text-xs md:text-sm font-medium mb-2">Lo que más sale</div>
                               <div className="space-y-2">
                                 <div className="flex items-center justify-between">
-                                  <span className="text-xs md:text-sm">Producto A</span>
+                                  <span className="text-xs md:text-sm">Tornillos 2"</span>
                                   <div className="flex items-center space-x-2">
                                     <div className="w-16 md:w-20 bg-gp-neutral-200 rounded-full h-2">
                                       <div
@@ -794,7 +908,7 @@ export default function GestionProLanding() {
                                   </div>
                                 </div>
                                 <div className="flex items-center justify-between">
-                                  <span className="text-xs md:text-sm">Producto B</span>
+                                  <span className="text-xs md:text-sm">Pintura Látex 20L</span>
                                   <div className="flex items-center space-x-2">
                                     <div className="w-16 md:w-20 bg-gp-neutral-200 rounded-full h-2">
                                       <div
@@ -819,21 +933,21 @@ export default function GestionProLanding() {
               <div className="flex-shrink-0 border-t bg-white p-4 md:p-6">
                 <div className="text-center">
                   <p className="text-sm md:text-base text-gp-neutral-600 mb-4">
-                    ¿Te gusta lo que ves? Comienza tu prueba gratuita ahora
+                    ¿Viste lo simple que es? Empezá hoy mismo en tu negocio.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3 justify-center">
                     <Link
-                      href="https://wa.me/3416171435?text=¡Hola!%20Me%20interesa%20comenzar%20la%20prueba%20gratis%20de%20GestiónPro"
+                      href="https://wa.me/3416171435?text=¡Hola!%20Vi%20la%20demo%20y%20quiero%20empezar%20con%20GestiónPro"
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={() => setShowDemo(false)}
-                      className="inline-flex items-center justify-center bg-gp-primary hover:bg-gp-primary-700 text-white px-6 py-3 text-sm md:text-base font-medium rounded-md transition-colors"
+                      className="inline-flex items-center justify-center bg-gp-olive hover:bg-gp-olive-700 text-white px-6 py-3 text-sm md:text-base font-medium rounded-md transition-colors"
                     >
-                      <Zap className="mr-2 h-4 w-4" />
-                      👉 Comenzar Prueba Gratis
+                      <MessageCircle className="mr-2 h-4 w-4" />
+                      👉 Quiero empezar ahora
                     </Link>
                     <Button variant="outline" onClick={() => setShowDemo(false)} className="text-sm md:text-base">
-                      Cerrar Demo
+                      Cerrar
                     </Button>
                   </div>
                 </div>
@@ -847,7 +961,7 @@ export default function GestionProLanding() {
           href="https://wa.me/3416171435?text=¡Hola!%20Me%20interesa%20GestiónPro"
           target="_blank"
           rel="noopener noreferrer"
-          className="fixed bottom-6 right-6 z-50 flex h-16 w-16 items-center justify-center rounded-full bg-[#25D366] text-white shadow-2xl hover:bg-[#20ba5a] hover:scale-110 transition-all duration-300 animate-bounce-subtle"
+          className="fixed bottom-6 right-6 z-50 flex h-16 w-16 items-center justify-center rounded-full bg-gp-olive text-white shadow-2xl hover:bg-gp-olive-700 hover:scale-110 transition-all duration-300 animate-bounce-subtle"
           aria-label="Contactar por WhatsApp"
         >
           <svg
@@ -874,7 +988,7 @@ export default function GestionProLanding() {
                   />
                 </div>
                 <p className="text-gp-neutral-600 text-sm leading-relaxed">
-                  La plataforma integral que revoluciona la gestión empresarial para pequeñas y medianas empresas
+                  La herramienta simple para que ferreterías y negocios ordenen sus ventas y stock sin complicaciones.
                 </p>
                 <div className="text-sm text-gp-neutral-600 space-y-1">
                   <p>gestionpro.pro</p>
@@ -897,8 +1011,8 @@ export default function GestionProLanding() {
                 <h3 className="font-semibold mb-4 text-gp-neutral-900">Producto</h3>
                 <ul className="space-y-2 text-sm text-gp-neutral-600 mb-6">
                   <li>
-                    <Link href="#caracteristicas" className="hover:text-gp-primary transition-colors">
-                      Características
+                    <Link href="#como-funciona" className="hover:text-gp-primary transition-colors">
+                      Cómo funciona
                     </Link>
                   </li>
                   <li>

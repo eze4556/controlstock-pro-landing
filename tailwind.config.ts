@@ -83,17 +83,17 @@ const config = {
           foreground: "#ffffff",
         },
         "gp-accent": {
-          DEFAULT: "#0f7f92", // Teal
-          50: "#effafd",
-          100: "#d0f1f8",
-          200: "#a6e4f1",
-          300: "#6cd2e6",
-          400: "#36bad6",
-          500: "#1a9dbb",
-          600: "#0f7f92", // Main
-          700: "#116676",
-          800: "#145461",
-          900: "#154752",
+          DEFAULT: "#ea580c", // Orange Main
+          50: "#fff7ed",
+          100: "#ffedd5",
+          200: "#fed7aa",
+          300: "#fdba74",
+          400: "#fb923c",
+          500: "#f97316",
+          600: "#ea580c", // Main
+          700: "#c2410c",
+          800: "#9a3412",
+          900: "#7c2d12",
           foreground: "#ffffff",
         },
         "gp-highlight": { // Lime

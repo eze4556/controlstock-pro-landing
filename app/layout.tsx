@@ -83,7 +83,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="es" className="scroll-smooth">
+    <html lang="es" className="scroll-smooth" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/logonuevo.png" />
         <link rel="apple-touch-icon" href="/logonuevo.png" />
@@ -96,7 +96,8 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#1e40af" />
         <meta name="msapplication-config" content="/browserconfig.xml" />
       </head>
-      <body className={`${montserrat.className} antialiased`}>
+      <body className={`${montserrat.className} antialiased`} suppressHydrationWarning>
+
         {children}
         <script
           type="application/ld+json"
