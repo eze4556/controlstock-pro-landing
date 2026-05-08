@@ -43,9 +43,9 @@ export default function GestionProLanding() {
     <div className="flex flex-col min-h-screen bg-white">
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-white">
-        <div className="container flex h-24 items-center justify-between px-4 md:px-6">
+        <div className="container flex h-16 md:h-24 items-center justify-between px-4 md:px-6">
           <Link href="#" className="flex items-center space-x-3" prefetch={false}>
-            <Image src="/logonuevo.png" width={250} height={80} alt="Logo Gestión Pro" className="h-20 w-auto" />
+            <Image src="/logonuevo.png" width={250} height={80} alt="Logo Gestión Pro" className="h-12 md:h-20 w-auto" />
           </Link>
 
           <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
@@ -75,16 +75,16 @@ export default function GestionProLanding() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-gp-primary-50 via-white to-gp-secondary-50 py-20 md:py-32">
+        <section className="relative overflow-hidden bg-gradient-to-br from-gp-primary-50 via-white to-gp-secondary-50 py-12 md:py-32">
           <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
           <div className="container relative px-4 md:px-6">
-            <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
-              <div className="flex flex-col justify-center space-y-8 text-center lg:text-left">
+            <div className="grid gap-8 lg:grid-cols-2 lg:gap-16 items-center">
+              <div className="flex flex-col justify-center space-y-5 md:space-y-8 text-center lg:text-left">
                 <div className="space-y-4">
-                  <h1 className="text-4xl font-bold tracking-tight text-gp-neutral-900 sm:text-5xl md:text-6xl lg:text-7xl uppercase">
+                  <h1 className="text-2xl font-bold tracking-tight text-gp-neutral-900 sm:text-3xl md:text-5xl lg:text-7xl uppercase leading-tight">
                     ¿No sabés cuánto ganás en tu ferretería?
                   </h1>
-                  <div className="mx-auto max-w-[700px] text-lg text-gp-neutral-600 lg:mx-0 md:text-xl space-y-2">
+                  <div className="mx-auto max-w-[700px] text-sm md:text-lg text-gp-neutral-600 lg:mx-0 md:text-xl space-y-2">
                     <p className="font-semibold text-gp-primary">
                       Dejá el cuaderno. Controlá ventas, stock y ganancias desde el celular.
                     </p>
@@ -98,19 +98,19 @@ export default function GestionProLanding() {
                   <p className="text-sm font-medium text-gp-neutral-500 italic">
                     Mirá cómo sería tu ferretería ordenada en menos de 1 minuto:
                   </p>
-                  <div className="flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
+                  <div className="flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
                     <Link
                       href="https://wa.me/3416171435?text=¡Hola!%20Quiero%20dejar%20el%20cuaderno%20ahora%20con%20GestiónPro"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center bg-gp-olive hover:bg-gp-olive-700 text-white h-16 w-full sm:w-auto min-w-[240px] px-8 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                      className="inline-flex items-center justify-center bg-gp-olive hover:bg-gp-olive-700 text-white h-14 md:h-16 w-full sm:w-auto px-5 md:px-8 text-base md:text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                     >
                       <MessageCircle className="mr-2 h-5 w-5" />
                       Quiero dejar el cuaderno ahora
                     </Link>
                     <Button
                       onClick={() => setShowDemo(true)}
-                      className="bg-gp-accent hover:bg-gp-accent-700 text-white h-16 w-full sm:w-auto min-w-[240px] px-8 text-lg font-semibold rounded-xl transition-all duration-300"
+                      className="bg-gp-accent hover:bg-gp-accent-700 text-white h-14 md:h-16 w-full sm:w-auto px-5 md:px-8 text-base md:text-lg font-semibold rounded-xl transition-all duration-300"
                     >
                       <Play className="mr-2 h-4 w-4" />
                       Ver demo gratis
@@ -119,7 +119,7 @@ export default function GestionProLanding() {
                   <p className="text-xs font-bold text-red-600 uppercase tracking-wider">
                     En 1 día ya lo estás usando
                   </p>
-                  <div className="flex items-center justify-center lg:justify-start space-x-6 text-sm text-gp-neutral-600">
+                  <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 text-xs md:text-sm text-gp-neutral-600">
                     <div className="flex items-center space-x-1">
                       <CheckCircle className="h-4 w-4 text-gp-secondary" />
                       <span>Se usa desde el celular</span>
@@ -171,9 +171,9 @@ export default function GestionProLanding() {
               </p>
             </div>
 
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-16">
+            <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mb-16">
               <Card className="group hover:shadow-lg transition-all duration-300 border-0 shadow-md hover:shadow-xl hover:-translate-y-1 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-                <CardContent className="p-8 text-center">
+                <CardContent className="p-5 md:p-8 text-center">
                   <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gp-primary-100 group-hover:bg-gp-primary group-hover:text-white transition-all duration-300">
                     <Warehouse className="h-8 w-8 text-gp-primary group-hover:text-white" />
                   </div>
@@ -309,7 +309,7 @@ export default function GestionProLanding() {
               </p>
             </div>
 
-            <div className="grid gap-8 md:grid-cols-3 max-w-4xl mx-auto">
+            <div className="grid gap-6 grid-cols-1 sm:grid-cols-3 max-w-4xl mx-auto">
               {[
                 {
                   icon: MessageCircle,
@@ -369,12 +369,22 @@ export default function GestionProLanding() {
                 </CardHeader>
                 <CardContent className="px-8 pb-10">
                   <div className="text-center mb-10">
-                    <div className="flex flex-col items-center mb-4">
-                      <div className="flex items-baseline justify-center bg-gp-accent-50 px-6 py-4 rounded-3xl border-2 border-gp-accent-100">
-                        <span className="text-6xl font-black text-gp-accent">$25.000</span>
-                        <span className="text-xl text-gp-accent-700 ml-1 font-bold">/mes</span>
+                    <div className="flex flex-col items-center gap-3">
+                      {/* Primer mes gratis */}
+                      <div className="w-full flex flex-col items-center bg-gp-secondary-50 border-2 border-gp-secondary-300 rounded-3xl px-6 py-4">
+                        <span className="text-xs font-black uppercase tracking-widest text-gp-secondary-700 mb-1">🎁 Primer mes</span>
+                        <div className="flex items-baseline justify-center">
+                          <span className="text-6xl font-black text-gp-secondary">$0</span>
+                        </div>
+                        <span className="text-sm font-semibold text-gp-secondary-600 mt-1">Completamente gratis</span>
                       </div>
-
+                      {/* Flecha */}
+                      <span className="text-gp-neutral-400 font-bold text-lg">↓ luego</span>
+                      {/* Precio regular */}
+                      <div className="flex items-baseline justify-center bg-gp-accent-50 px-6 py-3 rounded-2xl border-2 border-gp-accent-100">
+                        <span className="text-4xl font-black text-gp-accent">$25.000</span>
+                        <span className="text-lg text-gp-accent-700 ml-1 font-bold">/mes</span>
+                      </div>
                     </div>
                   </div>
 
@@ -412,7 +422,7 @@ export default function GestionProLanding() {
 
                     <div className="grid grid-cols-2 gap-2 text-center pt-2">
                       <div className="text-xs font-bold text-gp-neutral-600 bg-gp-neutral-100 py-2 rounded-lg border border-gp-neutral-200">
-                        ✅ Probalo Gratis
+                        🎁 1er Mes Gratis
                       </div>
                       <div className="text-xs font-bold text-gp-neutral-600 bg-gp-neutral-100 py-2 rounded-lg border border-gp-neutral-200">
                         🤝 Sin contratos raros
@@ -443,7 +453,7 @@ export default function GestionProLanding() {
               </p>
             </div>
 
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            <div className="grid gap-6 grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
               {[
                 {
                   icon: MessageCircle,
@@ -458,12 +468,12 @@ export default function GestionProLanding() {
                   description: "Si no te sirve, te vas cuando quieras. Sin contratos raros.",
                 },
               ].map((guarantee, index) => (
-                <div key={index} className="text-center p-6 animate-fade-in" style={{ animationDelay: `${(index + 1) * 0.1}s` }}>
-                  <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gp-accent-100">
-                    <guarantee.icon className="h-8 w-8 text-gp-accent" />
+                <div key={index} className="text-center p-3 md:p-6 animate-fade-in" style={{ animationDelay: `${(index + 1) * 0.1}s` }}>
+                  <div className="mb-3 md:mb-4 inline-flex h-12 w-12 md:h-16 md:w-16 items-center justify-center rounded-2xl bg-gp-accent-100">
+                    <guarantee.icon className="h-6 w-6 md:h-8 md:w-8 text-gp-accent" />
                   </div>
-                  <h3 className="text-lg font-semibold text-gp-neutral-900 mb-2">{guarantee.title}</h3>
-                  <p className="text-gp-neutral-600 text-sm">{guarantee.description}</p>
+                  <h3 className="text-sm md:text-lg font-semibold text-gp-neutral-900 mb-1 md:mb-2">{guarantee.title}</h3>
+                  <p className="text-gp-neutral-600 text-xs md:text-sm">{guarantee.description}</p>
                 </div>
               ))}
             </div>
@@ -528,7 +538,7 @@ export default function GestionProLanding() {
         <section className="py-20 md:py-32">
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold text-center mb-16 text-gp-neutral-900 uppercase">Lo que dicen otros ferreteros</h2>
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               {[
                 {
                   text: "Antes usaba cuaderno y era un lío. Por fin sé cuánta plata gano por día. Antes era todo a ojo y siempre me faltaba guita.",
@@ -582,7 +592,7 @@ export default function GestionProLanding() {
                   Escribinos por WhatsApp
                 </Link>
               </div>
-              <div className="flex items-center justify-center space-x-6 text-sm text-white/80 animate-fade-in" style={{ animationDelay: "0.3s" }}>
+              <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-white/80 animate-fade-in" style={{ animationDelay: "0.3s" }}>
                 <div className="flex items-center space-x-1">
                   <CheckCircle className="h-4 w-4" />
                   <span>Sin tarjeta de crédito</span>
@@ -975,8 +985,8 @@ export default function GestionProLanding() {
 
         {/* Footer */}
         <footer className="border-t bg-gradient-to-br from-gp-neutral-100 via-gp-neutral-200 to-gp-neutral-300 text-gp-neutral-800">
-          <div className="container px-4 md:px-6 py-12">
-            <div className="grid gap-8 md:grid-cols-3">
+          <div className="container px-4 md:px-6 py-8 md:py-12">
+            <div className="grid gap-8 grid-cols-1 md:grid-cols-3">
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Image
